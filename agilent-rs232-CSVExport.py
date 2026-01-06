@@ -146,6 +146,13 @@ for i in range(0, len(data_points)):
 
 #now we want to graph it
 
+#export to CSV
+csv_filename = "oscilloscope_capture.csv"
+with open(csv_filename, "w") as csv_file:
+    csv_file.write("Time (S),Voltage (V)\n")
+    for t, v in zip(data_points_times, data_points):
+        csv_file.write(f"{t},{v}\n")
+print(f"Data exported to {csv_filename}")
 
 
 
