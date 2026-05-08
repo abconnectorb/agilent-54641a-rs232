@@ -5,6 +5,8 @@
 
 #to run from terminal type:
 #python3 agilent-rs232-CSVExport.py --port COM6 --baud
+
+#to use in normal mode, MAKE SURE RUN/STOP Button is red!
 import serial
 import matplotlib.pyplot as plt
 import argparse
