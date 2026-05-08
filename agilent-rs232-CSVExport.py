@@ -1,5 +1,10 @@
+
+#ON THE 54641, GO TO utilities -> I/O settings -> RS232 settings
+#Set the baud rate to 57600, and the handshaking to DTR.
 #!/usr/bin/python3
 
+#to run from terminal type:
+#python3 agilent-rs232-CSVExport.py --port COM6 --baud
 import serial
 import matplotlib.pyplot as plt
 import argparse
